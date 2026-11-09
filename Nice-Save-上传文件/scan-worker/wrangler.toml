@@ -1,0 +1,12 @@
+name = "ledger-scan"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Your app's address (no trailing slash). Several: "https://a.github.io,https://b.pages.dev"
+ALLOWED_ORIGIN = "https://jwu687652-arch.github.io"
+
+# Secrets — set these once from this folder, never put them in this file:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put APP_TOKEN
